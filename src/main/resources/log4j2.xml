@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Configuration name="easyoops" packages="com.easyoops">
+<Configuration name="CloudWiz" packages="com.cloudWiz">
     <Properties>
         <Property name="bizPath">
-            C:\projects\logs\biz\SERVER.BIZ.log
+            ./projects/logs/biz/SERVER.BIZ.log
         </Property>
         <Property name="httpPath">
-            C:\projects\logs\http\SERVER.HTTP.log
+            ./projects/logs/http/SERVER.HTTP.log
         </Property>
         <Property name="errPath">
-            C:\projects\logs\error\SERVER.ERR.log
+            ./projects/logs/error/SERVER.ERR.log
         </Property>
         <Property name="pattern">.%d{yyyyMMddHH}</Property>
     </Properties>
@@ -16,7 +16,7 @@
     <Appenders>
         <Console name="STDOUT" target="SYSTEM_OUT" ignoreExceptions="false">
             <PatternLayout>
-                <Pattern>%d{yyyy/MM/dd HH:mm:ss.SSS} [%X{logTrxId}] [%-5p] [%c] %m%n</Pattern>
+                <Pattern>%d{yyyy/MM/dd HH:mm:ss.SSS} [%-5p] [%c] %m%n</Pattern>
             </PatternLayout>
         </Console>
 
