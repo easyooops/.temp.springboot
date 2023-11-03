@@ -10,10 +10,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.cloudwiz</groupId>
-	<artifactId>cloudwiz</artifactId>
+	<groupId>com.easyoops</groupId>
+	<artifactId>easyoops</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CloudWiz</name>
+	<name>EasyOops</name>
 	<description>standard springboot framework</description>
 	<properties>
 		<!-- intellij -->
@@ -28,25 +28,6 @@
 		<springfox.version>3.0.0</springfox.version>
 
 	</properties>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.amazonaws</groupId>
-				<artifactId>aws-java-sdk-bom</artifactId>
-				<version>1.12.1</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>software.amazon.awssdk</groupId>
-				<artifactId>bom</artifactId>
-				<version>2.16.1</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<dependencies>
 		<!-- spring -->
@@ -182,10 +163,6 @@
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
 			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>pricing</artifactId>
 		</dependency>
 
 		<!-- json -->
